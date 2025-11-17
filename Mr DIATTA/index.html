@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Diatta - Professeur SVT | Lycée Démba Diop, Mbour</title>
+    <meta name="description" content="Professeur de SVT avec plus de 7 ans d'expérience. Cours de renforcement pour Terminale S2, Première S2 et Seconde S à Mbour, Sénégal.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://VOTRE_URL_DE_SITE_WEB.com/">
+    <meta property="og:title" content="Mr Diatta - Professeur SVT | Lycée Démba Diop, Mbour">
+    <meta property="og:description" content="Professeur de SVT avec plus de 7 ans d'expérience. Cours de renforcement pour Terminale S2, Première S2 et Seconde S à Mbour, Sénégal.">
+    <meta property="og:image" content="images/logo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo" onclick="scrollToTop()">
+                    <div class="logo-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="logo-name">Mr Diatta</div>
+                        <div class="logo-title">Professeur SVT</div>
+                    </div>
+                </div>
+
+                <nav class="desktop-nav">
+                    <a href="#hero" class="nav-link">Accueil</a>
+                    <a href="#about" class="nav-link">À Propos</a>
+                    <a href="#courses" class="nav-link">Cours</a>
+                    <a href="#testimonials" class="nav-link">Témoignages</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button class="btn btn-primary" onclick="scrollToContact()">Réserver un cours</button>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#hero" class="mobile-nav-link">Accueil</a>
+                <a href="#about" class="mobile-nav-link">À Propos</a>
+                <a href="#courses" class="mobile-nav-link">Cours</a>
+                <a href="#testimonials" class="mobile-nav-link">Témoignages</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+                <button class="btn btn-primary btn-full" onclick="scrollToContact()">Réserver un cours</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                        <span>Professeur Certifié en SVT</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Mr <span class="text-emerald">Diatta</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Enseignant de Sciences de la Vie et de la Terre
+                    </p>
+                    
+                    <p class="hero-description">
+                        Plus de 7 ans d'expérience au Lycée Démba Diop de Mbour, Sénégal. 
+                        Spécialisé dans la préparation aux examens et cours de renforcement.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large" onclick="scrollToContact()">
+                            Réserver un cours
+                        </button>
+                        <button class="btn btn-outline btn-large" onclick="window.location.href='tel:+221775568119'">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            Appeler maintenant
+                        </button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">7+</div>
+                            <div class="stat-label">Années d'expérience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Niveaux enseignés</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Élèves suivis</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <img src="images/logo.png" 
+                        <img src="logo.png" 
+                             alt="Professeur Diatta" 
+                             loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                    
+                    <div class="floating-card">
+                        <div class="floating-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="floating-card-label">Lycée</div>
+                            <div class="floating-card-value">Démba Diop, Mbour</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    À Propos de <span class="text-emerald">Votre Professeur</span>
+                </h2>
+                <p class="section-description">
+                    Passionné par l'enseignement des Sciences de la Vie et de la Terre, je mets mon expertise 
+                    au service de la réussite de mes élèves depuis plus de 7 ans au Lycée Démba Diop de Mbour.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                    </div>
+                    <h3>Pédagogie Adaptée</h3>
+                    <p>Méthodes d'enseignement personnalisées selon les besoins de chaque élève</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"/>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                        </svg>
+                    </div>
+                    <h3>Expertise Confirmée</h3>
+                    <p>Plus de 7 années d'expérience dans l'enseignement des SVT au lycée</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Résultats Prouvés</h3>
+                    <p>Préparation efficace aux examens avec un taux de réussite élevé</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Suivi Personnalisé</h3>
+                    <p>Accompagnement individuel pour garantir la progression de chaque élève</p>
+                </div>
+            </div>
+
+            <div class="approach-section">
+                <div class="approach-grid">
+                    <div class="approach-content">
+                        <h3 class="approach-title">Mon Approche Pédagogique</h3>
+                        <div class="approach-text">
+                            <p>
+                                Ma méthode d'enseignement repose sur une compréhension approfondie des concepts 
+                                scientifiques, combinée à des applications pratiques qui rendent la matière 
+                                accessible et passionnante.
+                            </p>
+                            <p>
+                                Je crois fermement que chaque élève possède un potentiel unique. Mon rôle est 
+                                de l'identifier et de le développer à travers un accompagnement personnalisé 
+                                et bienveillant.
+                            </p>
+                            <p>
+                                Les cours de renforcement que je propose sont conçus pour combler les lacunes, 
+                                approfondir les connaissances et préparer efficacement aux examens du baccalauréat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="approach-steps">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Diagnostic Initial</h4>
+                                <p>Évaluation du niveau et identification des besoins</p>
+                            </div>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Programme Personnalisé</h4>
+                                <p>Création d'un plan adapté aux objectifs de l'élève</p>
+                            </div>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Suivi Continu</h4>
+                                <p>Évaluations régulières et ajustements du programme</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Cours de <span class="text-emerald">Renforcement</span>
+                </h2>
+                <p class="section-description">
+                    Des programmes adaptés à chaque niveau pour garantir votre réussite scolaire
+                </p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/T.png" 
+                             alt="Terminale S2" 
+                             loading="lazy">
+                        <span class="course-badge">Prioritaire</span>
+                        <div class="course-overlay"></div>
+                        <h3 class="course-level">Terminale S2</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">Préparation intensive au Baccalauréat série S2</p>
+                        <ul class="course-topics">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                Génétique et évolution
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                Physiologie animale et végétale
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                Écologie et environnement
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                Méthodologie des épreuves du Bac
+                            </li>
+                        </ul>
+                        <div class="course-duration">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            4h par semaine
+                        </div>
+                        <button class="btn btn-primary btn-full" onclick="scrollToContact()">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                            S'inscrire
+                        </button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/1er.png" 
+                             alt="Première S2" 
+                             loading="lazy">
+                        <span class="course-badge badge-popular">Populaire</span>
+                        <div class="course-overlay"></div>
+                        <h3 class="course-level">Première S2</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">Consolidation des bases et préparation à la Terminale</p>
+                        <ul class="course-topics">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                Biologie cellulaire avancée
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                Reproduction et hérédité
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                Fonctions de nutrition
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                Travaux pratiques et expérimentation
+                            </li>
+                        </ul>
+                        <div class="course-duration">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            1h30 par semaine
+                        </div>
+                        <button class="btn btn-primary btn-full" onclick="scrollToContact()">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                            S'inscrire
+                        </button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/2e.png" 
+                             alt="Seconde S" 
+                             loading="lazy">
+                        <span class="course-badge badge-fundamental">Fondamental</span>
+                        <div class="course-overlay"></div>
+                        <h3 class="course-level">Seconde S</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">Introduction aux Sciences de la Vie et de la Terre</p>
+                        <ul class="course-topics">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                Unité et diversité du vivant
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                Fonctionnement de l'organisme
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                Planète Terre et environnement
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                Initiation à la démarche scientifique
+                            </li>
+                        </ul>
+                        <div class="course-duration">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            1h30 par semaine
+                        </div>
+                        <button class="btn btn-primary btn-full" onclick="scrollToContact()">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                            S'inscrire
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Témoignages de <span class="text-emerald">Mes Élèves</span>
+                </h2>
+                <p class="section-description">
+                    Découvrez les retours d'expérience de mes élèves et leurs réussites
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Grâce aux cours de Mr Diatta, j'ai obtenu mon Bac avec mention Bien. Sa pédagogie claire et son accompagnement personnalisé m'ont permis de comprendre des concepts que je trouvais difficiles."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="avatar avatar-emerald">FS</div>
+                        <div>
+                            <div class="author-name">Fatou Sall</div>
+                            <div class="author-info">Terminale S2 • 2024</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Un professeur exceptionnel ! Les cours de renforcement sont bien structurés et Mr Diatta prend vraiment le temps d'expliquer jusqu'à ce qu'on comprenne. Mes notes ont beaucoup progressé."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="avatar avatar-teal">MN</div>
+                        <div>
+                            <div class="author-name">Moussa Ndiaye</div>
+                            <div class="author-info">Première S2 • 2024</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Mr Diatta est un excellent enseignant. Il maîtrise parfaitement son domaine et sait transmettre sa passion pour les SVT. Je recommande vivement ses cours à tous les élèves."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="avatar avatar-green">AD</div>
+                        <div>
+                            <div class="author-name">Aïssatou Diop</div>
+                            <div class="author-info">Terminale S2 • 2023</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Les cours sont très interactifs et Mr Diatta utilise des exemples concrets qui facilitent la compréhension. C'est le meilleur prof de SVT que j'ai eu !"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="avatar avatar-emerald-dark">IS</div>
+                        <div>
+                            <div class="author-name">Ibrahima Sarr</div>
+                            <div class="author-info">Seconde S • 2024</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "J'ai eu mon Bac avec 16/20 en SVT grâce à Mr Diatta. Ses méthodes de révision et ses exercices ciblés sont très efficaces. Un grand merci !"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="avatar avatar-teal-dark">MF</div>
+                        <div>
+                            <div class="author-name">Mariama Faye</div>
+                            <div class="author-info">Terminale S2 • 2023</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Un professeur dévoué et patient. Il explique plusieurs fois si nécessaire et s'assure que chaque élève a compris avant de passer au chapitre suivant."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="avatar avatar-green-dark">CF</div>
+                        <div>
+                            <div class="author-name">Cheikh Fall</div>
+                            <div class="author-info">Première S2 • 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-banner">
+                <div class="stat-item">
+                    <div class="stat-value">95%</div>
+                    <div class="stat-label">Taux de réussite au Bac</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">100+</div>
+                    <div class="stat-label">Élèves accompagnés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">7+</div>
+                    <div class="stat-label">Années d'expérience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">4.9/5</div>
+                    <div class="stat-label">Note moyenne</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Contactez-<span class="text-emerald">moi</span>
+                </h2>
+                <p class="section-description">
+                    N'hésitez pas à me contacter pour plus d'informations ou pour réserver vos cours de renforcement
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card clickable" onclick="window.location.href='tel:+221775568119'">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">Téléphone</div>
+                            <div class="contact-value">+221 77 556 81 19</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card clickable" onclick="window.open('https://wa.me/221775568119', '_blank')">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">WhatsApp</div>
+                            <div class="contact-value">Discuter sur WhatsApp</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">Adresse</div>
+                            <div class="contact-value">Lycée Démba Diop, Mbour, Sénégal</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">Disponibilité</div>
+                            <div class="contact-value">Lun - Sam: 14h - 19h</div>
+                        </div>
+                    </div>
+
+                    <div class="whatsapp-cta">
+                        <h3>Réponse Rapide</h3>
+                        <p>
+                            Je réponds généralement dans les 24 heures. Pour une réponse immédiate, 
+                            contactez-moi par téléphone ou WhatsApp.
+                        </p>
+                        <button class="btn btn-light btn-full" onclick="window.open('https://wa.me/221775568119', '_blank')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            WhatsApp Direct
+                        </button>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3 class="form-title">Envoyez un Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required placeholder="Votre nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+221 XX XXX XX XX">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="votre@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="level">Niveau scolaire *</label>
+                                <select id="level" name="level" required>
+                                    <option value="">Sélectionnez un niveau</option>
+                                    <option value="Seconde S">Seconde S</option>
+                                    <option value="Première S2">Première S2</option>
+                                    <option value="Terminale S2">Terminale S2</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Parlez-moi de vos besoins, objectifs et disponibilités..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full btn-large">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            Envoyer via WhatsApp
+                        </button>
+
+                        <p class="form-note">
+                            En cliquant sur "Envoyer", vous serez redirigé vers WhatsApp avec votre message pré-rempli
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="footer-logo-name">Mr Diatta</div>
+                            <div class="footer-logo-title">Professeur SVT</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Enseignant passionné avec plus de 7 ans d'expérience au Lycée Démba Diop de Mbour. 
+                        Spécialisé dans la préparation aux examens et le renforcement scolaire.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#courses">Cours Proposés</a></li>
+                        <li><a href="#testimonials">Témoignages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <a href="tel:+221775568119">+221 77 556 81 19</a>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Lycée Démba Diop<br>Mbour, Sénégal</span>
+                        </li>
+                    </ul>
+
+                    <div class="footer-levels">
+                        <h4>Niveaux enseignés</h4>
+                        <div class="level-tags">
+                            <span class="level-tag">Terminale S2</span>
+                            <span class="level-tag">Première S2</span>
+                            <span class="level-tag">Seconde S</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Mr Diatta - Professeur SVT. Tous droits réservés.</p>
+                <p class="footer-love">
+                    Créé avec 
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                    pour l'éducation
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
